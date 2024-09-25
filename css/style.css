@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: inherit;
+    background-color: #f0f2f5;
+    line-height: 1.6;
+  }
+  
+  
+  header {
+    height: 100vh; /* ความสูงของ header */
+    width: 100%;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center; /* จัดกลาง */
+    align-items: center; /* จัดกลางในแนวตั้ง */
+  }
+  
+  header .main {
+    width: 90%; /* ปรับความกว้าง */
+    max-width: 800px; /* จำกัดความกว้างสูงสุด */
+    display: flex;
+    gap: 40px; /* ปรับระยะห่าง */
+    
+  }
+  
+  header .main .left {
+    flex: 1;
+    
+  }
+  
+  header .main .left p {
+    font-size: 20px; /* ปรับขนาดฟอนต์ */
+    letter-spacing: 0.2px;
+    margin-left: 28px;
+    margin-top: -14px;
+    font-weight: 500px;
+    line-height: 32px;
+    
+  }
+  
+  header .main .left img {
+    height: 90px; /* ปรับความสูงของโลโก้ */
+    width: auto; /* ปรับให้แสดงอัตโนมัติ */
+    
+  }
+  
+  header .main .right {
+    flex: 1;
+  }
+  
+  header .main .right form {
+    background: #fff;
+    width: 100%;
+    max-width: 360px; /* ปรับขนาดฟอร์มให้เล็กลง */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* ลด padding เพื่อให้ฟอร์มเล็กลง */
+    border-radius: 8px;
+}
+  
+  .form_body {
+    padding: 0 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  form input {
+    padding: 14px 16px;
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+    font-size: 17px; /* ปรับขนาดฟอนต์ */
+    border-radius: 5px;
+    outline-color: #8ab7ef;
+    width: 100%; /* ใช้ความกว้างเต็ม */
+  }
+  
+  .login {
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px; /* ปรับขนาดฟอนต์ */
+    line-height: 48px;
+    padding: 0 16px;
+    width: 100%; /* ใช้ความกว้างเต็ม */
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .forget {
+    text-align: center;
+    color: #1877f2;
+    cursor: pointer;
+    font-size: 14px; /* ปรับขนาดฟอนต์ */
+  }
+  
+  .forget:hover {
+    text-decoration: underline;
+  }
+  
+  hr {
+    background-color: rgba(128, 128, 128, 0.349);
+    height: 0.5px; /* ปรับความสูง */
+  }
+  
+  .create {
+    background-color: #42b72a;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px; /* ปรับขนาดฟอนต์ */
+    line-height: 48px;
+    width: 100%; /* ใช้ความกว้างเต็ม */
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    margin: auto;
+  }
+  
+  .foot {
+    margin-top: 20px; /* ปรับระยะห่าง */
+    margin-left: 20px; /* ปรับระยะห่าง */
+    font-size: 14px; /* ปรับขนาดฟอนต์ */
+  }
+  
+  /* Footer CSS */
+  #footer {
+    background-color: #f5f6f7;
+    padding: 10px 0; /* ปรับระยะห่าง */
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .footer-links,
+  .footer-more-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .footer-copyright p,
+  .footer-links a,
+  .footer-more-links a {
+    color: #555;
+    font-size: 11px; /* ปรับขนาดฟอนต์ */
+    text-decoration: none;
+  }
+  
+  .footer-more-links a:hover {
+    text-decoration: underline;
+  }
